@@ -1,0 +1,6 @@
+{
+    "name" : "Pause",
+    "author" : "M Yakub Mizan <ym@mymizan.rocks>",
+    "description" : "Throttle users who are trying to flood your system",
+    "url" : "http://mymizan.rocks"
+}
