@@ -1,8 +1,0 @@
-{
-    "name" : "Pause",
-	"sms_name" : "Pause",
-	"voice_title" : "Pause",
-	"sms_title" : "Pause",
-    "description" : "Throttle users who are trying to flood your system",
-    "type" : ["sms", "voice"]
-}

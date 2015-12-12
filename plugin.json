@@ -1,6 +1,6 @@
 {
-    "name" : "Pause",
+    "name" : "Throttle",
     "author" : "M Yakub Mizan <ym@mymizan.rocks>",
-    "description" : "Throttle users who are trying to flood your system",
+    "description" : "Throttle users who are trying to abuse your system",
     "url" : "http://mymizan.rocks"
 }

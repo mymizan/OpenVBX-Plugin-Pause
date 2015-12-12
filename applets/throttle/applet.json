@@ -1,0 +1,8 @@
+{
+    "name" : "Throttle",
+	"sms_name" : "Throttle",
+	"voice_title" : "Throttle",
+	"sms_title" : "Throttle",
+    "description" : "Throttle users who are trying to abuse your system",
+    "type" : ["sms", "voice"]
+}
