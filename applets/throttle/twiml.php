@@ -6,8 +6,9 @@ $enabled = AppletInstance::getValue('enabled');
 $instance_id = AppletInstance::getInstanceId();
 $limit = AppletInstance::getValue('limit');
 
-$blocked_applet = AppletInstance::getValue('blocked_applet');
-$unblocked_applet = AppletInstance::getValue('unblocked_applet');
+$blocked_applet = AppletInstance::getDropZoneUrl('blocked');
+$unblocked_applet = AppletInstance::getDropZoneUrl('unblocked');
+
 //$flow_type = AppletInstance::getFlowType();
 
 $response = new TwimlResponse;
@@ -17,7 +18,7 @@ if ( limit_exceeded($duration, $enabled, $instance_id, $limit) ){
 	$response->redirect($blocked_applet);
 
 } else {
-	//number under limit
+	//number within limit
 	$response->redirect($unblocked_applet);
 }
 

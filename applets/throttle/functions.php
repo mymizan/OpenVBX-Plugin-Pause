@@ -19,7 +19,7 @@ function limit_exceeded($duration, $enabled, $instance_id, $limit){
 	}
 
 	//clean expired time
-	if (!empty($data['added']) && (time() - $data['added']) > $duration ){
+	if (!empty($data->added) && (time() - $data->added) > $duration ){
 		PluginData::set($instance_id . "__" . $number, array(
 			'limit' => 1,
 			'added' => time()
@@ -27,9 +27,9 @@ function limit_exceeded($duration, $enabled, $instance_id, $limit){
 		$data = PluginData::get($instance_id . "__" . $number);
 	}
 
-	if ($data['limit'] >= $limit && (time() - $data['added']) <= $duration){
+	if ($data->limit >= $limit && (time() - $data->added) <= $duration){
 		PluginData::set($instance_id . "__" . $number, array(
-			'limit' => $data['limit'] + 1
+			'limit' => $data->limit + 1
 			));
 		return true;
 	}

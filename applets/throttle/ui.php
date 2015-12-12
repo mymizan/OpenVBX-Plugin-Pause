@@ -36,13 +36,13 @@ $unblocked_applet = AppletInstance::getValue('unblocked_applet');
 	<h2>Next</h2>
 	<p>Go to the next applet if the number hasn't exceeded the limit</p>
 	<div class="vbx-full-pane">
-		<?php echo AppletUI::DropZone('unblocked_applet'); ?>
+		<?php echo AppletUI::DropZone('unblocked'); ?>
 	</div><!-- .vbx-full-pane -->
 
 	<h2>Next - if limit exceeds</h2>
 	<p>Go to the next applet if the number has exceeded the limit</p>
 	<div class="vbx-full-pane">
-		<?php echo AppletUI::DropZone('blocked_applet'); ?>
+		<?php echo AppletUI::DropZone('blocked'); ?>
 	</div><!-- .vbx-full-pane -->
 
 </div><!-- .vbx-applet -->
