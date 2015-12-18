@@ -1,0 +1,8 @@
+{
+    "name" : "Blacklist",
+	"sms_name" : "Blacklist",
+	"voice_title" : "Blacklist",
+	"sms_title" : "Blacklist",
+    "description" : "Blacklist users who are trying to abuse your system",
+    "type" : ["sms", "voice"]
+}
